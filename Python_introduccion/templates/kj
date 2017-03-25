@@ -1,0 +1,5 @@
+def insertar(producto, descripcion, existencias, precio_compra, precio_venta, imagen_producto):
+	db insert("productos", producto=producto, descripcion=descripcion, existencias=existencias, precio_compra=precio_compra, precio_venta=precio_venta, imagen_producto=imagen_producto)
+
+
+	model.py

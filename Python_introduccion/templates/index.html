@@ -1,0 +1,24 @@
+$def with (productos)
+<html>
+	<head>
+	</head>
+			
+	<body>
+		<h1>Soy el Index</h1>
+		
+		<table class="table table-striped table-hover ">
+		<tr>
+			<td>Productos</td>
+			<td>Insertar</td>
+			<td> Editar</td>
+		</tr>
+		$for item in productos:
+		<tr>
+			<td><a href='/ver/$item.id_producto'>
+			$item.producto</td>
+			<td><a href='/edit/$item.id_producto'>Editar</a></td>
+			<td><a href='/insertar/$item.id_producto'>Insertar</a></td>
+		</tr>
+		</table>
+	</body>
+</html>

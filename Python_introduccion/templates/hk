@@ -1,0 +1,40 @@
+class Insertar(self)
+
+def GET(self):
+	return render.insertar()
+def POST(self):
+form = web.input()
+
+model.insertar(form.producto, form.descripcion, form.existencias, form.precio_compra, form.precio_venta,)
+return render.index()
+
+app
+
+
+def POST(self):
+
+form=web.input()
+
+imagen = web.input(imagen_producto{})
+
+filedir = 'static/files'}
+filepath=imagen.imagen:producto.filename.repalce('\\','/')
+filename=filepath.split('/')[-1]
+#copiar archivo al servidor
+fout = open(filedir +'/'+ filename,'w')
+fout.write(imagen.imagen_producto.file.read())
+fout.close()
+imagen_producto = filename
+
+model.insertar(
+form['producto'],
+form['descripción'],
+form['existencias'],
+form['precio_compra'],
+form['precio_venta'],
+imagen_prodcuto
+)
+
+raise web.seeother('/')
+
+def insertar

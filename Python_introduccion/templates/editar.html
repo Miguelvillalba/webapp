@@ -1,0 +1,25 @@
+$def with (post, form)
+<html>
+	<head>
+	</head>
+	<body>
+	<h1>Editar Producto</h1>
+		<form action="" method="POST">
+			<label>Producto:</label><br>
+			<input type="text" name="producto"><br>
+			<label>Descripcion:</label><br>
+			<input type="text" name="descripcion"><br>
+			<label>Precio Compra:</label><br>
+			<input type="text" name="precio_compra"><br>
+			<label>Precio Ventas:</label><br>
+			<input type="text" name="precio_venta"><br>
+			<input type="submit" name="Enviar"><br>
+		$:form.render()
+		</form>
+
+	<h2>Delete post</h2>
+		<form action="/delete/$post.id" method="post">
+    	<input type="submit" value="Delete post"/>
+		</form>
+	</body>
+</html>
